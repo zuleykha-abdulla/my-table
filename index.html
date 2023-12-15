@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="icon" type="image/x-icon" href="/img/15.jpg">
+
+</head>
+
+<body>
+
+    <div>
+        <h1>Favicon </h1>
+        <h2>Səhifədə title-ın yaninda default olan şəkli dəyişmək üçündür</h2>
+
+
+        <picture>
+            <source width="400" media="(min-width: 650px)" srcset="./img/15.jpg">
+            <source width="400" media="(min-width: 465px)" srcset="./img/16.jpg">
+            <img width="400" src="./img/17.jpg" style="width:auto;">
+        </picture>
+    </div>
+
+    <hr>
+    <h1>FORMS</h1>
+
+    <h3>DataList - SELECTDƏN FƏRQI İSTİFADƏCİ DƏYİŞƏ BİLİR İSTƏDƏYƏNİ</h3>
+
+    <form action="">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+    <br>
+    <hr>
+    <div>
+        <h1>Type - Reset</h1>
+
+
+        <form action="">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+    
+
+    </div>
+
+   <div>
+    <h1>Type - FİLE</h1>
+
+    <form action="">
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+   </div>
+   
+
+<div>
+    <h1>Type - Telephone</h1>
+
+    <form action="">
+        <label for="phone">Enter a phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        <small>Format: 123-45-678</small><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+    
+<div>
+    <h1> Forms Atributes</h1>
+    <h3> readonly - inputu dəyişməyə icazə vermir</h3>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Zuleyxa" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Abdullayeva">
+      </form>
+      
+</div>
+
+   <div>
+    <h1> Forms Atributes</h1>
+<h3>maxlength - atributu input sahəsində icazə verilən simvolların maksimum sayını təyin edir</h3>
+
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4">
+  </form>
+
+   </div>
+
+   <div>
+<h1>Forms Atributes</h1>
+<h2>min and max</h2>
+
+<label for="quantity">Quantity (between 1 and 5):</label>
+ <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+   </div>
+    
+</body>
+
+</html>
